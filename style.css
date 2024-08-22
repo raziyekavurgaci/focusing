@@ -1,0 +1,53 @@
+.bg-section {
+  background-image: url(/audio/bg-video.mp4);
+}
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.bg-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+.bi-play-btn {
+  font-size: 70px;
+  color: #000000;
+}
+.cause {
+  justify-content: space-around;
+  display: flex;
+}
+h2,
+.baslik,
+.links {
+  justify-content: center;
+  display: flex;
+}
+button {
+  font-size: 30px;
+  color: aliceblue;
+  height: 40px;
+  width: 55px;
+  background-color: rgb(153, 13, 153);
+  border: 2px solid purple;
+  border-radius: 5px;
+}
+.p-1 {
+  justify-content: center;
+  display: flex;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
