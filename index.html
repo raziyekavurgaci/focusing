@@ -3,56 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focusing</title>    
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="bg-section">
-        <div class="bg-video" id="video"> 
-            <video outoplay loop muted>
-                <source src="/audio/bg-video.mp4">
-            </video>
-        </div>
-        <div>
-            <div class="container">
-                <h1 class="baslik">Odaklanma Yardımcısı</h1>
-                <p class="p-1">“Çalışmayabaşladığınızdan beri telefonunuz <span id="counter"> '0' </span> kere dikkatinizi dağıttı."</p>
-                <button class="buton" onclick="decreaseCounter()" id="decreaseButton">-</button>
-                <button class="buton" onclick="increaseCounter()" id="increaseButton">+</button>
+    <section>
+        <div class="focus-body">
+            <h1>FOCUS MODE</h1>
+            <div>
+                The phone distracted you <span id="count">0</span> times
             </div>
-        </div>
-        <section class="musics">
-            <h2>Aşağıdakimüzikleri odağınızı kolaylaştırmak amacıyla çalıştığınız sırada dinleyebilirsiniz.</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4"><i class="bi bi-play-btn" title="Play" onclick="music_event()"></i>
-                        <audio id="piano"  src="/audio/Relaxing Piano.mp3" ></audio><p>Rahatlatıcı Piyano</p>
-                    </div>
-                    <div class="col-4"><i class="bi bi-play-btn" title="Play" onclick="music_event1()"></i>
-                        <audio id="somine" src="/audio/Somine Sesi.mp3"></audio><p>Şömine Sesi</p>
-                    </div>
-                    <div class="col-4"><i class="bi bi-play-btn" title="Play" onclick="music_event2()"></i>
-                        <audio id="rain" src="/audio/Yağmur Sesi.mp3"></audio><p>Yağmur Sesi</p>
-                    </div>
-                </div>
+            <button id="count-button" onclick="handleCount()">Click</button>
+            <div class="icon-button">
+                <i id="sominePlay" class="bi bi-music-player-fill"></i>
+                <audio id="sominePlayAudio" controls>
+                    <source src="/audio/Somine Sesi.mp3" type="audio/mp3">
+                </audio>
+                <i id="pianoPlay" class="bi bi-music-player-fill"></i>
+                <audio  id="pianoPlayAudio" controls>
+                    <source src="/audio/Relaxing Piano.mp3" type="audio/mp3">
+                </audio>
+                <i id="rainPlay" class="bi bi-music-player-fill"></i>
+                <audio  id="rainPlayAudio" controls>
+                    <source src="/audio/Yağmur Sesi.mp3" type="audio/mp3">
+                </audio>
             </div>
-        </section>
-        <div>
-            <h3 class="cause">Cep Telefonu, Dikkat Eksikliği ve Unutkanlık Sebebi Olabilir!</h3>
-            <p class="p-2">Neden bazı insanlar diğerlerinden daha iyi hafızaya sahip görünüyor? Bu, okul çağımızda sınav bilgilerini hatırlamakta zorlandığımız küçük yaşlardan beri herkesi rahatsız eden bir sorudur. Aslında bu, sinirbilimciler ve davranış bilimcileri için de kafa karıştırıcı bir sorudur. Stanford’dan bir bilim insanı ekibi bu soruların yanıtını bulmaya çalıştı ve sık dikkat dağınıklığının ve unutkanlık nedenlerinden birinin aşırı telefon kullanımına bağlı çoklu görevin (multi-task) olabileceğini bildirdi.</p>
+            <input type="range" id="volume-input">
         </div>
-        <section class="links">
-            <div class="container">
-                <h3>Bu sitelere de bakabilirsiniz.</h3>
-                <a href="https://asoftmurmur.com/">https://asoftmurmur.com/</a><br>
-                <a href="https://mynoise.net/">https://mynoise.net/</a><br>
-                <a href="https://www.rainymood.com/">https://www.rainymood.com/</a><br>
-                <a href="https://www.noisli.com/">https://www.noisli.com/</a><br>
-            </div>
-        </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

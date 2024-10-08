@@ -1,61 +1,42 @@
-.bg-section {
-  background-image: url(/audio/bg-video.mp4);
-}
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
+body {
+  background-color: rgb(152, 87, 212);
+  color: white;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
 }
-.bg-video video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-}
-.bi-play-btn {
-  font-size: 70px;
-  color: #000000;
-}
-.cause {
-  justify-content: space-around;
+section {
   display: flex;
-}
-h2,
-.links {
   justify-content: center;
-  display: flex;
+  position: relative;
+  text-align: center;
 }
-button {
-  font-size: 30px;
-  color: aliceblue;
-  height: 40px;
-  width: 55px;
-  background-color: rgb(153, 13, 153);
-  border: 2px solid purple;
-  border-radius: 5px;
+audio {
+  display: none;
 }
-.row {
-  display: flex;
-  justify-content: space-around;
+.focus-body {
+  margin-top: 80px;
+  font-size: 35px;
 }
-.baslik,
-.p-1,
-.p-2,
-h2,
-h3 {
-  color: aliceblue;
-}
-h1 {
+
+.focus-body h1 {
   font-size: 50px;
 }
-.p-1 {
+.focus-body span {
+  font-weight: 900;
   font-size: 30px;
+}
+.focus-body button {
+  color: white;
+  background: transparent;
+  border-radius: 15px;
+  border-color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 24px;
+}
+.icon-button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  gap: 20px;
 }
